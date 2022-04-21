@@ -1,27 +1,17 @@
-# Good Fast Cheap
+# Hackathon
 
-### Overview
-#### Team One
-- Blago Ugrinov
-- Sabrina Starr
-- Matt Reed
-- Dan Costa
+#### Overview
 
-#### Constraint
-
-- Must use AdaBoost
-- Your choice of features
-- Your choice of samples
+Partcipated in a hackathon, where the task was to predict if a person's income was in excess of $50,000 given certain profile information. The hackathon was limited to six hours and I was given a constraint stating that I must include AdaBoost in the model.
 
 ---
 
-### Background
-#### Initial Assessment
+#### Executive Summary
 
-In our initial assessment, we cleaned the data to ensure it was understandable and usable for the modeling we executed. Once basic cleaning was complete, we transformed the data using the Polynomial function to flush out potential relationships within the data. As the number of features were then substantially larger than we wanted to use for our model, we then fit the data to against a PCA model to identify the most useful features (i.e. those with the greatest variance). 
+The initial steps completed were to explore and clean the dataset, which included providing values for both ordinal and nominal columns and dropping unnecessary columns for the modeling stage. Once the data was understandable and usable for the modeling the next step was to transform the data using the Polynomial function which assists with flushing out potential relationships within the data. As the number of features were then substantially larger than what is useful in the modeling stage, a PCA model was fit to identify the most useful features (i.e. those with the greatest variance). At this point, the data was ready to proceed into the modeling stage, where a Random Forest Classifier paired with the Adaboost Classifier was fit. 
 
 ---
 
-### Observations
+#### Observations
 
-At this point, our data was in a much better place to proceed into the modeling stage. To best determine those records who's wage was greater than $50,000, we used a Random Forest Classifier paired with the Adaboost Classifier. Fitting the data using this method resulted in a 84.9% accuracy score.
+Fitting the data using this method resulted in a 84.9% accuracy score. Comparing this output to the baseline model of 75.9%, it seemed as though the AdaBoost paired with Random Forest Classifier proved useful.
